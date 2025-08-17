@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: clamp(0.8125rem, 0.7923rem + 0.0718vw, 0.9rem);
+}
+
+:root {
+  --pink: #e9a7af;
+  --gray: #282627;
+  --white: #ffffff;
+
+  --heading: clamp(3.4375rem, 3.3077rem + 0.4615vw, 4rem);
+  --sub-heading: clamp(1.625rem, 1.5385rem + 0.3077vw, 2rem);;
+  --sub-heading-2: clamp(1.125rem, 1.0846rem + 0.1436vw, 1.3rem);
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.backgroundAnimated {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-container {
+  backdrop-filter: grayscale(200%) brightness(4) blur(1px);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.content-container {
+  width: 100%;
+  overflow: hidden auto;
+  /* padding: 0.5rem; */
+  padding-bottom: 20em;
+}
+
+.content-container::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+.content-container::-webkit-scrollbar-thumb {
+  background: var(--pink);
+  border-radius: 10px;
+}

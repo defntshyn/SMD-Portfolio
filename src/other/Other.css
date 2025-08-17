@@ -1,0 +1,148 @@
+/* background */
+.iridescence-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* carousel of feature */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.feature-list {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  max-width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  outline: unset;
+  border: none;
+}
+
+
+.slide::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  background: linear-gradient(215deg, rgba(40, 38, 39, 0.32) 0%, rgba(40, 38, 39, 1) 100%);
+}
+
+.carousel span {
+  content: '';
+  max-width: 100%;
+  height: 70px;
+  aspect-ratio: 1 / 1 !important;
+  position: absolute;
+  /* display: block; */
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.carousel span.one {
+  top: 10px;
+  left: 10px;
+  border-top: 5px solid var(--pink);
+  border-left: 5px solid var(--pink);
+  filter: drop-shadow(0 0 10px var(--pink));
+}
+
+
+.carousel span.two {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 5px solid var(--pink);
+  border-right: 5px solid var(--pink);
+  filter: drop-shadow(0 0 10px var(--pink));
+}
+
+.list-container{
+  display: flex;
+}
+
+.list-container img {
+  width: 100%;
+  min-height: 500px;
+  height: 50vh;
+  pointer-events: none;
+  object-fit: contain;
+}
+
+.work-description {
+  z-index: 50;
+  /* outline: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 120px;
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+}
+
+.work-description h4 {
+  font-size: var(--sub-heading);
+  color: var(--pink);
+  text-shadow: 0 0 5px var(--gray);
+  text-align: left;
+}
+
+.work-description ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.work-description p {
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2em;
+}
+
+.work-description li {
+  background-color: var(--pink);
+  padding: 3px 10px;
+  color: var(--gray);
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* z-index: 100; */
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background: transparent;
+  border: 1px solid var(--pink);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: var(--pink);
+}

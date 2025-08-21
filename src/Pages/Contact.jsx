@@ -1,8 +1,14 @@
 import React from 'react'
+import ContactForm from '../components/Contact/ContactForm'
+import FadeInSection from '../components/FadeInSection'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+    <FadeInSection>
+      <ContactForm/>
+    </FadeInSection>
+    </>
   )
 }
 

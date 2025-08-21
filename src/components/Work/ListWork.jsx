@@ -12,39 +12,75 @@ const ListWork = () => {
                 <div className="list">
                     <div className="list-item">
                         <img src={Picture} />
-                        <h5>Reservation System</h5>
+                        <div className="short-description">
+                            <h5>Reservation System</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda mollitia repellendus eveniet. Harum maxime, omnis tenetur cupiditate inventore quae magni quas mollitia ducimus voluptates obcaecati expedita numquam. Natus, mollitia.</p>
+                            <button>Navigate to content</button>
+                        </div>
                     </div>
                     <div className="list-item">
                         <img src={Picture1} />
-                        <h5>Enrollment System</h5>
+                        <div className="short-description">
+                            <h5>Enrollment Sytem</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda mollitia repellendus eveniet. Harum maxime, omnis tenetur cupiditate inventore quae magni quas mollitia ducimus voluptates obcaecati expedita numquam. Natus, mollitia.</p>
+                            <button>Navigate to content</button>
+                        </div>
                     </div>
                     <div className="list-item">
                         <img src={Picture2} />
-                        <h5>Aria Prototype</h5>
+                        <div className="short-description">
+                            <h5>Aria Prototype</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda mollitia repellendus eveniet. Harum maxime, omnis tenetur cupiditate inventore quae magni quas mollitia ducimus voluptates obcaecati expedita numquam. Natus, mollitia.</p>
+                            <button>Navigate to content</button>
+                        </div>
                     </div>
                     <div className="list-item">
                         <img src={Picture} />
-                        <h5>Reservation System</h5>
+                        <div className="short-description">
+                            <h5>Reservation System</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda mollitia repellendus eveniet. Harum maxime, omnis tenetur cupiditate inventore quae magni quas mollitia ducimus voluptates obcaecati expedita numquam. Natus, mollitia.</p>
+                            <button>Navigate to content</button>
+                        </div>
                     </div>
                     <div className="list-item">
                         <img src={Picture1} />
-                        <h5>Enrollment System</h5>
+                        <div className="short-description">
+                            <h5>Enrollment Sytem</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda mollitia repellendus eveniet. Harum maxime, omnis tenetur cupiditate inventore quae magni quas mollitia ducimus voluptates obcaecati expedita numquam. Natus, mollitia.</p>
+                            <button>Navigate to content</button>
+                        </div>
                     </div>
                     <div className="list-item">
                         <img src={Picture2} />
-                        <h5>Aria Prototype</h5>
+                        <div className="short-description">
+                            <h5>Aria Prototype</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda mollitia repellendus eveniet. Harum maxime, omnis tenetur cupiditate inventore quae magni quas mollitia ducimus voluptates obcaecati expedita numquam. Natus, mollitia.</p>
+                            <button>Navigate to content</button>
+                        </div>
                     </div>
                     <div className="list-item">
                         <img src={Picture} />
-                        <h5>Reservation System</h5>
+                        <div className="short-description">
+                            <h5>Reservation System</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda mollitia repellendus eveniet. Harum maxime, omnis tenetur cupiditate inventore quae magni quas mollitia ducimus voluptates obcaecati expedita numquam. Natus, mollitia.</p>
+                            <button>Navigate to content</button>
+                        </div>
                     </div>
                     <div className="list-item">
                         <img src={Picture1} />
-                        <h5>Enrollment System</h5>
+                        <div className="short-description">
+                            <h5>Enrollment Sytem</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda mollitia repellendus eveniet. Harum maxime, omnis tenetur cupiditate inventore quae magni quas mollitia ducimus voluptates obcaecati expedita numquam. Natus, mollitia.</p>
+                            <button>Navigate to content</button>
+                        </div>
                     </div>
                     <div className="list-item">
                         <img src={Picture2} />
-                        <h5>Aria Prototype</h5>
+                        <div className="short-description">
+                            <h5>Aria Prototype</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda mollitia repellendus eveniet. Harum maxime, omnis tenetur cupiditate inventore quae magni quas mollitia ducimus voluptates obcaecati expedita numquam. Natus, mollitia.</p>
+                            <button>Navigate to content</button>
+                        </div>
                     </div>
                 </div>
             </div>

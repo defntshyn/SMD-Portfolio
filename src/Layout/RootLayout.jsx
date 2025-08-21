@@ -1,17 +1,17 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Navigation from '../components/Navigation'
-
+import { Outlet } from "react-router-dom";
+import Navigation from "../components/Navigation";
+import ScrollToTop from "../components/ScrollToTop";
 
 const RootLayout = () => {
-    return (
-        <>
-            <Navigation />
-            <div className="content-container">
-                <Outlet />
-            </div>
-        </>
-    )
-}
+  return (
+    <>
+      <Navigation />
+      <ScrollToTop />
+      <div className="content-container">
+        <Outlet />
+      </div>
+    </>
+  );
+};
 
-export default RootLayout
+export default RootLayout;

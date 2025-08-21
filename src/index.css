@@ -22,8 +22,11 @@ p {
   --white: #ffffff;
 
   --heading: clamp(3.4375rem, 3.3077rem + 0.4615vw, 4rem);
-  --sub-heading: clamp(1.625rem, 1.5385rem + 0.3077vw, 2rem);;
+  --sub-heading: clamp(1.625rem, 1.5385rem + 0.3077vw, 2rem);
+  ;
   --sub-heading-2: clamp(1.125rem, 1.0846rem + 0.1436vw, 1.3rem);
+
+  --contact: clamp(1rem, 5vw, 10rem);
 }
 
 body {
@@ -58,7 +61,7 @@ body {
   width: 100%;
   overflow: hidden auto;
   /* padding: 0.5rem; */
-  padding-bottom: 20em;
+  /* padding-bottom: 20em; */
 }
 
 .content-container::-webkit-scrollbar {
@@ -69,4 +72,56 @@ body {
 .content-container::-webkit-scrollbar-thumb {
   background: var(--pink);
   border-radius: 10px;
+}
+
+/* error page */
+.error-container {
+  margin: 0 auto;
+  height: 90vh;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.error-container h1{
+  color: var(--pink);
+  font-size: var(--heading);
+}
+
+.error-container h5{
+  color: white;
+  font-size: var(--sub-heading-2);
+}
+
+.error-container button{
+  cursor: pointer;
+  margin-top: 5em;
+  background-color: var(--pink);
+  padding: 1rem 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px var(--pink);
+  border: none;
+  transition: all 200ms;
+}
+
+.error-container button:active{
+  scale: 0.93;
+}
+
+/* simple animation */
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

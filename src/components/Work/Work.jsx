@@ -17,29 +17,38 @@ const Work = () => {
             <div className="work-image">
                 <img src={Picture} />
             </div>
-            <h2>Reservation System</h2>
-            <p className='tags'>
-                <ul>
-                    <li>PHP</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                    <li>SQL</li>
-                </ul>
+            <div className="heading">
+                <h2>Reservation System</h2>
+                <p className='tags'>Tags:
+                    <ul>
+                        <li>PHP</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>SQL</li>
+                    </ul>
+                </p>
+            </div>
+            <br /><br />
+            <h3>Description:</h3>
+            <p className="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates iusto quasi iste earum suscipit soluta, eos eveniet vitae natus quae, ullam atque aspernatur officia harum reiciendis dolorum consequuntur est? <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, unde a temporibus blanditiis molestiae expedita illo, veniam similique facilis magnam amet minima quos. Ullam, architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quasi suscipit iure asperiores in magni at illum? Incidunt dicta asperiores temporibus dolorem, porro delectus quas in quisquam perferendis, deserunt molestias!
             </p>
+            <br /><br /><br />
+            <h3>Preview:</h3>
             <div className="work-image-list">
-                <img src={Picture10} />            
+                <img src={Picture10} />
                 <img src={Picture1} />
-                <img src={Picture2} />                          
+                <img src={Picture2} />
                 <img src={Picture1} />
                 <img src={Picture8} />
-                <img src={Picture2} />            
+                <img src={Picture2} />
                 <img src={Picture3} />
                 <img src={Picture5} />
-                <img src={Picture4} />            
+                <img src={Picture4} />
                 <img src={Picture7} />
                 <img src={Picture6} />
-                <img src={Picture9} />  
+                <img src={Picture9} />
             </div>
         </div>
     )

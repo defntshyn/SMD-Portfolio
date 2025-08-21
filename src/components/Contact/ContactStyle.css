@@ -1,0 +1,211 @@
+@media screen and (max-width: 1200px) {
+    .main-container .contact-container{
+        flex-direction: column;
+        max-width: 1200px;
+        padding: 5rem 1rem 1rem;
+    }
+
+    .main-container .contact-container .banner,
+    .main-container .contact-container form{
+        width: 100%;
+    }
+
+    .main-container .contact-container .banner{
+        align-items: center;
+    }
+
+    .main-container .contact-container .banner p{
+        padding-top: 2rem;
+        max-width: 800px;
+    }
+
+    .main-container .contact-container form{
+        max-width: 700px;
+    }
+
+    .main-container .contact-container .banner{
+        text-align: center;
+    }
+
+    .main-container .contact-container .list-socials{
+        max-width: 500px;
+    }
+
+    .main-container .contact-container .list-socials a{
+        width: calc(100% / 4 - 20px);
+    }    
+}
+
+@media screen and (max-width: 600px){
+    .main-container .contact-container form{
+        padding: 2rem 1.5rem;
+    }
+    .main-container .contact-container .list-socials a span{
+        display: none;
+    }
+
+    .main-container .contact-container .list-socials a{
+        border: none;
+    }
+
+    .main-container .contact-container .list-socials a:hover{
+        border: none;
+    }
+}
+
+.contact-container{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1500px;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 20px;
+}
+
+.contact-container .banner{
+    width: calc(65% - 10px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-container .banner h2{
+    font-size: var(--heading);
+    color: var(--pink);
+}
+
+.contact-container .banner h5{
+    color: white;
+    font-size: calc(var(--sub-heading) - 5px);
+}
+
+.contact-container .banner p{
+    margin-top: 0.5rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.banner .list-socials{
+    padding: 1rem 0;
+    display: flex;
+    gap: 20px;
+}
+
+.list-socials a{
+    width: calc(70% / 4 - 20px);
+    color: var(--pink);
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    gap: 10px;
+    transition: all 0.5s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.list-socials a span{
+    font-size: 0.6em;
+    letter-spacing: 1px;
+}
+
+.list-socials a:hover{
+    border: 1px solid var(--pink);
+}
+
+
+
+.contact-container form{
+    width: calc(35% - 10px);
+    position: relative;
+    padding: 2.5rem 2rem;
+    color: white;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 25px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #fb838f04;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #e9a7af3a inset;
+}
+
+/* .contact-container::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    border-top: 2px solid var(--pink);
+    border-left: 2px solid var(--pink);
+    border-radius: 3px 10px;
+    filter: drop-shadow(0 0 20px var(--pink));
+}
+
+.contact-container::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid var(--pink);
+    border-right: 1px solid var(--pink);
+    border-radius: 3px 10px;
+    filter: drop-shadow(0 0 20px var(--pink));
+} */
+
+.contact-container form h3{
+    font-size: var(--sub-heading);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    /* text-transform: uppercase; */
+    display: flex;
+    gap: 10px;
+}
+
+.contact-container form h3::before{
+    content: '';
+    background-color: var(--pink);
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px var(--pink));
+    border-radius: 10px 0;
+}
+
+.contact-container form .input{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contact-container form label{
+    font-size: calc(var(--sub-heading-2) - 5px);
+    color: var(--pink);
+
+}
+
+form input,
+form textarea{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    font-size: 1em;
+}
+
+form button{
+    cursor: pointer;
+    margin-top: 3rem;
+    padding: 0.8rem;
+    background-color: var(--pink);
+    border-radius: 5px;
+    font-size: 1em;
+}

@@ -1,11 +1,23 @@
+@media screen and (max-width: 1325px) {
+    .main-container .list-item:nth-child(3n):hover{
+        transform: translateX(-28px) translateY(16px);
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .main-container .list-item {
         width: calc(100% / 2 - 10px);
     }
 
-    .main-container .list-item:hover {
+
+    .main-container .list-item:hover,
+    .main-container .list-item:nth-child(3n):hover {
         scale: 1.1;
-        transform: translateX(25px) translateY(10px);
+        transform: translateX(25px) translateY(9px);
+    }
+
+    .main-container .list-item:nth-child(even):hover{
+        transform: translateX(-25px) translateY(9px);
     }
 }
 
@@ -15,9 +27,18 @@
         min-height: 15vh;
     }
 
-    .main-container .list-item:hover {
-        scale: 1;
+    .main-container .list-item:hover,
+    .main-container .list-item:nth-child(3n):hover {
+        scale: 1.03;
         transform: translateX(0) translateY(0);
+    }
+
+    .main-container .list-item:nth-child(even):hover{
+        transform: translateX(0) translateY(0);
+    }
+
+    .main-container .work-content .work-image{
+        height: 30vh;
     }
 }
 
@@ -59,6 +80,7 @@
     min-height: 200px;
     display: flex;
     transition: all 300ms;
+    border-radius: 10px;
 }
 
 .list-item::before {
@@ -69,6 +91,7 @@
     width: 100%;
     background: linear-gradient(215deg, rgba(40, 38, 39, 0.32) 0%, rgba(40, 38, 39, 1) 100%);
     z-index: 10;
+    border-radius: 10px;
 }
 
 .list-item img {
@@ -76,20 +99,45 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(100) brightness(0.5);
+    filter: saturate(0.3) brightness(0.5);
+    border-radius: 10px;
 }
 
-.list h5 {
+.list-item .short-description {
     position: relative;
+    z-index: 15;
+    opacity: 0;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+}
+
+.list .short-description h5 {
     font-size: 1.2em;
-    align-self: end;
     color: white;
     letter-spacing: 1px;
-    opacity: 0;
-    z-index: 15;
-    transition: all 200ms;
-    font-weight: 300;
+    font-weight: 600;
+}
+
+.list .short-description p {
+    color: white;
+    font-size: 0.7em;
+    text-shadow: 0 0 1px black, 0 0 10px black, 0 0 20px black;
+}
+
+.list .short-description button {
+    align-self: end;
+    margin-top: 1em;
+    width: fit-content;
+    color: var(--pink);
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.477);
+    background-color: transparent;
+    border: none;
+    font-size: 0.9em;
+    cursor: pointer;
 }
 
 .list-item:hover {
@@ -98,8 +146,9 @@
     z-index: 50;
 }
 
-.list-item:hover h5 {
+.list-item:hover .short-description {
     opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .list-item:hover img {
@@ -119,29 +168,45 @@
     border-radius: 10px;
 }
 
-.work-content h2 {
-    color: white;
-    font-size: calc(var(--sub-heading) + 0.5em);
+.work-content h2 {    
+    color: var(--pink);
+    /* text-shadow: 0 0 2px white; */
+    font-size: calc(var(--sub-heading) + 0.8em);
     display: flex;
     gap: 10px;
 }
 
-.work-content h2::before {
+.work-content h3 {        
+    font-size: calc(var(--sub-heading) - 0.5em); 
+}
+
+.work-content .heading{
+    margin-top: 1.2em;
+    background-color: var(--gray);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* .work-content h2::before {
     content: '';
     background-color: var(--pink);
     width: 5px;
     height: auto;
     filter: drop-shadow(0 0 10px var(--pink));
     border-radius: 10px 0;
-}
+} */
 
-.work-content p.tags{
-    padding-right: 1rem;
+.work-content p.description{
+    margin-top: 1.3em;
     color: white;
+    font-size: 1em;
+    text-align: justify;
+    letter-spacing: 1px;
 }
 
 .work-content p.tags{
-    margin-top: 2rem;
+    color: white;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     gap: 15px;

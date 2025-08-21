@@ -54,6 +54,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding: 0 1rem;
 }
 
 .main-image {
@@ -223,7 +224,7 @@
 
 .social {
     position: absolute;
-    bottom: -60px;
+    bottom: -70px;
     right: 0;
     display: flex;
     align-items: center;
@@ -243,11 +244,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--pink);
+    background-color: var(--pink);
+    color: var(--gray);
+    text-shadow: 0 0 10px var(--pink);
     border: 1px solid var(--pink);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px 0.1px var(--pink);
+    font-size: 1.5em;
 }
 
 /* About Styles */

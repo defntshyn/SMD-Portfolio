@@ -318,6 +318,12 @@
     font-weight: bold;
 }
 
+.experience .heading{
+    background-color: var(--gray);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
 .experience h4{
     font-size: calc(var(--sub-heading) - 0.2em);
     color: var(--pink);
@@ -327,6 +333,11 @@
     font-size: calc(var(--sub-heading) - 0.5em);
     color: white;
     font-weight: lighter;
+}
+
+.experience h5 span{
+    font-size: calc(var(--sub-heading) - 0.7em);
+    font-style: italic;
 }
 
 .experience-list,

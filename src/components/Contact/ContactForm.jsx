@@ -29,6 +29,7 @@ const ContactForm = () => {
     };
 
     return (
+        <>
         <div className="contact-container">
             <div className="banner">
                 <h2>Contact</h2>
@@ -36,10 +37,9 @@ const ContactForm = () => {
                 <p>Feel free to reach out if you’d like to collaborate, have a question, or just want to say hi.
                     You can also connect with me through my socials below:</p>
                 <div className="list-socials">
-                    <a href=""><i className="fa-brands fa-facebook"></i><span>Facebook</span></a>
-                    <a href=""><i className="fa-brands fa-google"></i><span>Gmail</span></a>
-                    <a href=""><i className="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
-                    <a href=""><i class="fa-brands fa-github"></i><span>Github</span></a>
+                    <a href="https://www.facebook.com/LazyPotatooo.8" target='_blank'><i className="fa-brands fa-facebook"></i><span>Facebook</span></a>                    
+                    <a href="https://www.linkedin.com/in/shaynemichaeldanos/" target='_blank'><i className="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+                    <a href="https://github.com/defntshyn" target='_blank'><i class="fa-brands fa-github"></i><span>Github</span></a>
                 </div>
             </div>
             <form onSubmit={onSubmit} action="">
@@ -47,19 +47,23 @@ const ContactForm = () => {
                 <input type="hidden" name="subject" value="Email from Portfolio"></input>
                 <div className="input">
                     <label htmlFor="email">Email:</label>
-                    <input type="email" name="email" id="email" required/>
+                    <input type="email" name="email" id="email" required />
                 </div>
                 <div className="input">
                     <label htmlFor="name">Name:</label>
-                    <input type="text" name='name' required/>
+                    <input type="text" name='name' required />
                 </div>
                 <div className="input">
                     <label htmlFor="message">Message:</label>
                     <textarea name="message" id="message" rows="5" required></textarea>
                 </div>
                 <button>Send Message</button>
-            </form>
+            </form>                    
         </div>
+        <div className="extra-container">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+        </>
     )
 }
 

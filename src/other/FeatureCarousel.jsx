@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 // import Picture from '../assets/UE.jpg'
 import './Other.css'
 import slides from '../data/slides.js';
+import { useNavigate } from "react-router-dom";
 
 const FeatureCarousel = () => {
   const [current, setCurrent] = useState(0);
@@ -47,7 +48,7 @@ const FeatureCarousel = () => {
   };
 
   const handleTouchEnd = handleMouseUp;
-
+  const navigate = useNavigate();
 
   return (
     <>
@@ -74,7 +75,7 @@ const FeatureCarousel = () => {
         >
 
           {slides.map((slide, index) => (
-            <button key={index} className="slide">
+            <button key={index} className="slide" onClick={() => navigate(`/works/${slide.id}`)}>
               <div className="list-container">
                 <img src={`/assets/${slide.img}`} alt={slide.title} />
                 <div className="work-description">

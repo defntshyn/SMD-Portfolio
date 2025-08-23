@@ -1,59 +1,64 @@
 @media screen and (max-width: 1200px) {
-    .main-container .contact-container{
+    .main-container .contact-container {
         flex-direction: column;
         max-width: 1200px;
         padding: 5rem 1rem 1rem;
     }
 
+    .main-container .extra-container {
+        display: block;
+    }
+
     .main-container .contact-container .banner,
-    .main-container .contact-container form{
+    .main-container .contact-container form {
         width: 100%;
     }
 
-    .main-container .contact-container .banner{
+    .main-container .contact-container .banner {
         align-items: center;
     }
 
-    .main-container .contact-container .banner p{
+    .main-container .contact-container .banner p {
         padding-top: 2rem;
         max-width: 800px;
     }
 
-    .main-container .contact-container form{
+    .main-container .contact-container form {
         max-width: 700px;
     }
 
-    .main-container .contact-container .banner{
+    .main-container .contact-container .banner {
         text-align: center;
     }
 
-    .main-container .contact-container .list-socials{
+    .main-container .contact-container .list-socials {
         max-width: 500px;
     }
 
-    .main-container .contact-container .list-socials a{
-        width: calc(100% / 4 - 20px);
-    }    
+    .main-container .contact-container .list-socials a {
+        width: calc(100% / 3 - 20px);
+    }
 }
 
-@media screen and (max-width: 600px){
-    .main-container .contact-container form{
+@media screen and (max-width: 600px) {
+    .main-container .contact-container form {
         padding: 2rem 1.5rem;
     }
-    .main-container .contact-container .list-socials a span{
+
+    .main-container .contact-container .list-socials a span {
         display: none;
     }
 
-    .main-container .contact-container .list-socials a{
+    .main-container .contact-container .list-socials a {
         border: none;
     }
 
-    .main-container .contact-container .list-socials a:hover{
+    .main-container .contact-container .list-socials a:hover {
         border: none;
     }
 }
 
-.contact-container{
+.contact-container {
     position: relative;
     margin: 0 auto;
     max-width: 1500px;
@@ -64,37 +69,41 @@
     gap: 20px;
 }
 
-.contact-container .banner{
+.extra-container {
+    display: none;
+}
+
+.contact-container .banner {
     width: calc(65% - 10px);
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.contact-container .banner h2{
+.contact-container .banner h2 {
     font-size: var(--heading);
     color: var(--pink);
 }
 
-.contact-container .banner h5{
+.contact-container .banner h5 {
     color: white;
     font-size: calc(var(--sub-heading) - 5px);
 }
 
-.contact-container .banner p{
+.contact-container .banner p {
     margin-top: 0.5rem;
     color: white;
     letter-spacing: 1px;
 }
 
-.banner .list-socials{
+.banner .list-socials {
     padding: 1rem 0;
     display: flex;
     gap: 20px;
 }
 
-.list-socials a{
-    width: calc(70% / 4 - 20px);
+.list-socials a {
+    width: calc(70% / 3 - 20px);
     color: var(--pink);
     font-size: 1.5em;
     display: flex;
@@ -106,18 +115,18 @@
     border-radius: 5px;
 }
 
-.list-socials a span{
+.list-socials a span {
     font-size: 0.6em;
     letter-spacing: 1px;
 }
 
-.list-socials a:hover{
+.list-socials a:hover {
     border: 1px solid var(--pink);
 }
 
 
 
-.contact-container form{
+.contact-container form {
     width: calc(35% - 10px);
     position: relative;
     padding: 2.5rem 2rem;
@@ -160,7 +169,7 @@
     filter: drop-shadow(0 0 20px var(--pink));
 } */
 
-.contact-container form h3{
+.contact-container form h3 {
     font-size: var(--sub-heading);
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -169,7 +178,7 @@
     gap: 10px;
 }
 
-.contact-container form h3::before{
+.contact-container form h3::before {
     content: '';
     background-color: var(--pink);
     width: 5px;
@@ -178,20 +187,20 @@
     border-radius: 10px 0;
 }
 
-.contact-container form .input{
+.contact-container form .input {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
-.contact-container form label{
+.contact-container form label {
     font-size: calc(var(--sub-heading-2) - 5px);
     color: var(--pink);
 
 }
 
 form input,
-form textarea{
+form textarea {
     padding: 10px;
     width: 100%;
     border-radius: 5px;
@@ -201,7 +210,7 @@ form textarea{
     font-size: 1em;
 }
 
-form button{
+form button {
     cursor: pointer;
     margin-top: 3rem;
     padding: 0.8rem;

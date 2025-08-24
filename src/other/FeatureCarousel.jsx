@@ -77,7 +77,7 @@ const FeatureCarousel = () => {
           {slides.map((slide, index) => (
             <button key={index} className="slide" onClick={() => navigate(`/works/${slide.id}`)}>
               <div className="list-container">
-                <img src={`/assets/${slide.img}`} alt={slide.title} />
+                <img src={slide.img} alt={slide.title} />
                 <div className="work-description">
                   <h4>{slide.title}</h4>
                   <p>Tags:
